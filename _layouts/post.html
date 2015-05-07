@@ -1,0 +1,72 @@
+---
+layout: default
+---
+<body class="index-single">
+    <div id="container" class="container intro-effect-push">
+
+        <header class="header">
+            <div class="bg-img">
+                <img  class="async-image hide" src="#" data-src="{{ page.featured_image }}" alt="" />
+                <div class="overlay hidden" id="overlay"></div>
+            </div>
+            <div class="title hidden" id="title">                   
+                <h1>{{page.title}}</h1>
+            </div>
+        </header>
+        
+        <button class="trigger scroll-down-pulse"><span>Trigger</span></button>
+        
+        <div class="title">                 
+            <h1 class="black">{{ page.title }}</h1>
+            <h2 class="subline">{{ page.tagline }}</h2>
+        </div>
+        
+        <article class="content">
+            
+            <div>
+                {{ content }}
+            </div>
+            
+            <div class="article-footer">
+                <p>{% if page.author %}by <a href="#" class="hover-effect"><strong>{{ page.author }}</strong></a> &mdash;{% endif %} Posted on {{ page.date | date: "%b %-d, %Y" }}</p>
+                <div class="divider"></div>
+            </div>
+
+        </article>
+        
+
+
+        <div class="pagination grid">
+        {% if page.previous %} 
+            <figure class="single-item-effect half">
+                <img src="{{ page.previous.homepage_image }}" alt="{{ page.previous.title }}"/>
+                <figcaption>
+                    <div class="figcaption-border">
+                        <h2>{{ page.previous.title }}</h2>
+                        <p>{{ page.previous.tagline }}</p>
+                        <a href="{{ page.previous.url | prepend: site.baseurl }}">View more</a>
+                        <div class="figure-overlay"></div>
+                    </div>
+                </figcaption>       
+            </figure>   
+        {% endif %}
+        {% if page.next %}
+            <figure class="single-item-effect half">
+                <img src="{{ page.next.homepage_image }}" alt="{{ page.next.title }}"/>
+                <figcaption>
+                    <div class="figcaption-border">
+                        <h2>{{ page.next.title }}</h2>
+                        <p>{{ page.next.tagline }}</p>
+                        <a href="{{ page.next.url | prepend: site.baseurl }}">View more</a>
+                        <div class="figure-overlay"></div>
+                    </div>
+                </figcaption>                              
+            </figure>
+        {% endif %}
+            <div class="clearfix"></div>
+        </div>
+    </div><!-- /container -->
+    
+    {% include footer.html %}
+    
+</body>

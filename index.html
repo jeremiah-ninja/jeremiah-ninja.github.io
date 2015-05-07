@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<body class="homepage index-home index">
+    <div id="container" class="container intro-effect-grid">
+
+        <header class="header">
+            <div class="bg-img">
+                <img class="async-image hide" src="#" data-src="http://placehold.it/1280x720/7f8c8d/ffffff" alt="" />
+            </div>
+            <div class="title hidden" id="title">
+                <h1>Welcome to Jeremiah.ninja</h1>
+            </div>
+            <div class="overlay hidden" id="overlay"></div>
+        </header>
+        
+        <button class="trigger scroll-down-pulse"><span>Trigger</span></button>
+        
+        <article class="content">
+            <div class="">
+                <div class="grid">
+                    {% for post in site.posts %}
+                    <figure class="single-item-effect big {{ post.slug }}">
+                        <img src="{{ post.homepage_image }}" alt="{{ post.title }}"/>
+                        <figcaption>
+                            <div class="figcation-border">
+                                <h2>{{ post.title }}</h2>
+                                <p>{{ post.tagline }}</p>
+                                <a href="{{ post.url | prepend: site.baseurl }}">View more</a>
+                                <div class="figure-overlay"></div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    {% endfor %}
+                </div>
+            </div>
+        </article>
+
+    </div><!-- /container -->
+    
+    {% include footer.html %}
+</body>
