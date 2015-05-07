@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Untitled"
+tagline: "the best is still to be written"
+slug: untitled
+homepage_image: /img/untitled.jpg
+featured_image: /img/untitled.jpg
+date:   2015-04-27 02:05:28
+categories: personal post
+---
+
+If I were asked to title my life so far it would be “Untitled”. There have been trials and tribulations in my life, death and sorrow. Great accomplishments and dreams that have come true. I don’t mean to diminish their significance by saying “Untitled” because the good and the bad in my life hold importance. To me its simply a matter of perspective. To me my twenty years alive have been a preface, a prologue written by Charles Dickens. I want to change the world, not for the fame or glory but because I want to do my part in making humanity better than what it is. So yes, for right now my life is “Untitled”, because the best is still to be written. 

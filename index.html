@@ -6,10 +6,10 @@ layout: default
 
         <header class="header">
             <div class="bg-img">
-                <img class="async-image hide" src="#" data-src="http://placehold.it/1280x720/7f8c8d/ffffff" alt="" />
+                <img class="async-image hide" src="#" data-src="/img/oblivion.jpg" alt="welcome to oblivion" />
             </div>
             <div class="title hidden" id="title">
-                <h1>Welcome to Jeremiah.ninja</h1>
+                <h1>Welcome to Oblivion</h1>
             </div>
             <div class="overlay hidden" id="overlay"></div>
         </header>
@@ -19,7 +19,7 @@ layout: default
         <article class="content">
             <div class="">
                 <div class="grid">
-                    {% for post in site.posts %}
+                    {% for post in site.posts reversed %}
                     <figure class="single-item-effect big {{ post.slug }}">
                         <img src="{{ post.homepage_image }}" alt="{{ post.title }}"/>
                         <figcaption>

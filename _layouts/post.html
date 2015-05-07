@@ -48,7 +48,19 @@ layout: default
                         <div class="figure-overlay"></div>
                     </div>
                 </figcaption>       
-            </figure>   
+            </figure>
+        {% else %}
+            <figure class="single-item-effect half">
+                <img src="{{ page.homepage_image }}" alt="{{ page.title }}"/>
+                <figcaption>
+                    <div class="figcaption-border">
+                        <h2>{{ page.title }}</h2>
+                        <p>{{ page.tagline }}</p>
+                        <a href="{{ page.url | prepend: site.baseurl }}">View more</a>
+                        <div class="figure-overlay"></div>
+                    </div>
+                </figcaption>                              
+            </figure>
         {% endif %}
         {% if page.next %}
             <figure class="single-item-effect half">
@@ -58,6 +70,18 @@ layout: default
                         <h2>{{ page.next.title }}</h2>
                         <p>{{ page.next.tagline }}</p>
                         <a href="{{ page.next.url | prepend: site.baseurl }}">View more</a>
+                        <div class="figure-overlay"></div>
+                    </div>
+                </figcaption>                              
+            </figure>
+        {% else %}
+            <figure class="single-item-effect half">
+                <img src="{{ page.homepage_image }}" alt="{{ page.title }}"/>
+                <figcaption>
+                    <div class="figcaption-border">
+                        <h2>{{ page.title }}</h2>
+                        <p>{{ page.tagline }}</p>
+                        <a href="{{ page.url | prepend: site.baseurl }}">View more</a>
                         <div class="figure-overlay"></div>
                     </div>
                 </figcaption>                              
