@@ -1,7 +1,7 @@
 # Site settings
 title: Welcome to Oblivion
 email: jeremiah@jakealves.com
-description: > a project for school
+description: a project for school
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jeremiah.ninja" # the base hostname & protocol for your site
 twitter_username: something
