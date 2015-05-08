@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Untitled"
-tagline: "the best is still to be written"
+title:  Untitled
+tagline: the best is still to be written
 slug: untitled
-homepage_image: /img/untitled.jpg
+homepage_image: /img/untitled-homepage.jpg
 featured_image: /img/untitled.jpg
 date:   2015-04-27 02:05:28
 categories: personal post

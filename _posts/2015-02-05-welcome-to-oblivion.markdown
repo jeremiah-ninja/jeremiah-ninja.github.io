@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Oblivion"
 tagline: "Here lies a crack."
 slug: welcome-to-oblivion
-homepage_image: /img/oblivion.jpg
+homepage_image: /img/oblivion-homepage.jpg
 featured_image: /img/oblivion.jpg
 date:   2015-02-05 02:05:28
 categories: personal thoughts
